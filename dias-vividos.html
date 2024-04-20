@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utlf8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+    <title> ordenar numeros</title>
+</head>
+<body>
+    <script> 
+   var anonacimiento= parseInt(prompt("Fecha de nacimiento", 0));
+   var anoactual= parseInt(prompt("Fecha actual", 0));
+   var diasvividos = 0;
+
+while (anonacimiento < anoactual) {
+   
+
+if (anonacimiento %4 == 0){
+
+    diasvividos = diasvividos + 364 
+
+
+} else {
+    diasvividos = diasvividos + 365
+}
+anonacimiento = anonacimiento + 1 
+
+}
+document.write("la cantidad de años vividos es:",diasvividos);
+           </script>
+
+</body>
+</html>

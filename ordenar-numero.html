@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utlf8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+    <title> ordenar numeros</title>
+</head>
+<body>
+    <script> 
+
+ let n = parseInt(prompt("Ingresar numero"));
+ let ac = 0, c = 0, r = 0, aux = 0;
+ while (c<= 9){
+    aux = n;
+    while(aux> 0){
+       r = aux % 10;
+       if(r == c){
+            ac = (ac * 10) + r;
+        }
+        aux = (aux - r) / 10;
+    }
+    c = c + 1;
+ }
+ document.write (ac); 
+    
+ 
+           </script>
+
+</body>
+</html>

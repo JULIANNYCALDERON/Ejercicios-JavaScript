@@ -1,0 +1,29 @@
+<! DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="whidt=device-width, initial.scale=1.0">
+    <title> JavaScript - Volumen Esfera</title>
+      </head>
+      <body>
+        <h1> JavaScript - Volumen Esfera</h1>
+        <form action="" method="post" id="frmVolumenEsfera">
+          <label for="Radio"> Radio: </label><input type="text" name="radio" id= "radio" required> <br>
+          <label for="Volumen">Volumen:</label> <input type="text" name="volumen" id= "volumen"> <br>
+          <input type="submit" value="calcular" id="submit">
+        </form>
+          
+<script>
+  function calcularVolumenEsfera() {
+  let radio = parseFloat(document.getElementById("radio").value);
+  let volumen = (4/3) * Math.PI * Math.pow(radio, 3);
+  document.getElementById("volumen").value = volumen;
+  return false;
+   }
+window.onload= () => {
+  document.getElementById("frmvolumenEsfera").onsubmit = calcularVolumenEsfera;
+};
+</script>
+  </body>
+  </html>

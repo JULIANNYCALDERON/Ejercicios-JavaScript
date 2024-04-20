@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utlf8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+    <title> ordenar numeros</title>
+</head>
+<body>
+    <script> 
+   let salario1 = parseFloat(prompt("Introduzca el salario actual"))
+   let salarioin1 = 0;
+   let salariototal = 0;
+
+   if (salario1 < 15000 ) {
+    salarioin1 = (salario1 * 20) / 100 
+    salariototal = salario1 + salarioin1
+
+    document.write("El salario se incremento 20% :",salariototal);
+    
+   } 
+
+    if (salario1 > 15000) {
+        salarioin1 = (salario1 * 15) / 100 
+    salariototal = salario1 + salarioin1
+    document.write("El salario se incremento 15% :",salariototal);
+        
+    }
+   
+
+  
+           </script>
+
+</body>
+</html>
