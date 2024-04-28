@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utlf8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+    <title> dia de muertos y navidad </title>
+</head>
+<body>
+    <script> 
+let Dia_actual = parseInt(prompt("Introduzca el dia de hoy"));
+let Mes_actual = parseInt(prompt("Introduzca el mes actual"));
+let DiaMuerto = 306;
+let DiaNavidad = 359;
+let Total = 0;
+
+let Meses = [31,28,31,30,31,30,31,31,30,31];
+
+ if (Mes_actual < 11) {
+
+    for (let index = 0; index < Mes_actual -1; index++) {
+      
+        Total += Meses[index]
+    }
+    Total += Dia_actual
+    let Dias_Restantes = DiaMuerto - Total
+    document.write("Faltan:  ",Dias_Restantes, "para el dia de muertos  ")
+}
+
+if (Mes_actual < 12) {
+
+for (let index = 0; index < Mes_actual -1; index++) {
+  
+    Total += Meses[index]
+}
+Total += Dia_actual
+let Dias_RestanteNavi = DiaNavidad - Total
+document.write("Faltan:",Dias_RestanteNavi, "Para navidad")
+}
+     
+ 
+  </script>
+
+</body>
+</html>
